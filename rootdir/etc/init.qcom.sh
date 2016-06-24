@@ -91,17 +91,6 @@ if [ -f /sys/class/graphics/fb0/modes ]; then
 	fi
 fi
 
-bootmode=`getprop ro.bootmode`
-emmc_boot=`getprop ro.boot.emmc`
-case "$emmc_boot"
-    in "true")
-        if [ "$bootmode" != "charger" ]; then # start rmt_storage and rfs_access
-            start rmt_storage
-            start rfs_access
-        fi
-    ;;
-esac
-
 #
 # Make modem config folder and copy firmware config to that folder
 #
