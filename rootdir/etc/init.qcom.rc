@@ -273,8 +273,6 @@ on fs
     #write /sys/kernel/boot_adsp/boot 1
 
 on post-fs
-    export LD_PRELOAD libNimsWrap.so
-
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0

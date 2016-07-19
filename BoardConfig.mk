@@ -87,7 +87,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc.0/7af6000.i2c/i2c-6/6-0020/input/in
 
 # CNE
 BOARD_USES_QCNE := true
-TARGET_LDPRELOAD := libNimsWrap.so
 
 # Dex pre-opt to speed up initial boot
 ifeq ($(HOST_OS),linux)
