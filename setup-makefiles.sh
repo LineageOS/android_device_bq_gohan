@@ -18,8 +18,8 @@
 set -e
 
 # Required!
-DEVICE=kenzo
-VENDOR=xiaomi
+DEVICE=gohan
+VENDOR=bq
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

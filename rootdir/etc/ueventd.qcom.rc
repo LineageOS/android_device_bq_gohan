@@ -43,11 +43,13 @@
 /dev/smd6                 0660   system     system
 /dev/smd7                 0660   bluetooth  bluetooth
 /dev/ccid_bridge          0660   system     system
-/dev/ipa                  0660   system  net_admin
-/dev/wwan_ioctl           0660   system  net_admin
+/dev/ipa                  0660   system     net_admin
+/dev/wwan_ioctl           0660   system     net_admin
 /dev/ipaNatTable          0660   net_admin  net_admin
 /dev/rmnet_ctrl           0660   usb        usb
 /dev/dpl_ctrl             0660   usb        usb
+
+/dev/block/bootdevice/by-name/frp 0600 system system
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
@@ -117,6 +119,8 @@
 /dev/jpeg3                0660   system     camera
 /dev/adsprpc-smd          0664   system     system
 /dev/system_health_monitor 0640  radio      system
+/dev/wcnss_wlan           0660   system     system
+/dev/wcnss_ctrl           0660   system     system
 /dev/msm_camera/*         0660   system     camera
 /dev/gemini/              0660   system     camera
 /dev/mercury0             0660   system     camera
@@ -210,11 +214,6 @@
 /sys/devices/soc.0/78b5000.i2c/i2c-1/1-0045/leds/red		blink	0660	input	system
 /sys/devices/soc.0/78b5000.i2c/i2c-1/1-0045/leds/green		blink	0660	input	system
 /sys/devices/soc.0/78b5000.i2c/i2c-1/1-0045/leds/blue		blink	0660	input	system
-
-# fpc Fingerprint
-/sys/devices/soc.0/fpc_fpc1020*             hw_reset       0220   system     system
-/sys/devices/soc.0/fpc_fpc1020*             irq            0660   system     system
-/sys/devices/soc.0/fpc_fpc1020*             wakeup_enable  0220   system     system
 
 # wlan
 /dev/wcnss_wlan           0660   system     system
