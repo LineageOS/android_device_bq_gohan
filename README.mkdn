@@ -21,4 +21,4 @@ Camera  | Primary: 16 MP, f/2.0, phase detection autofocus, dual-LED (dual tone)
 
 Copyright 2016 - The CyanogenMod Project.
 
-![Aquaris X5 Plus](https://cellcute.com/wp-content/uploads/2016/02/BQ-Aquaris-X5-Plus-800x551.jpg "BQ Aquaris X5 Plus")
+![Aquaris X5 Plus](https://it-bqcom15-media.s3.amazonaws.com/prod/images/310_310/0/3/a/9/03a9ae5f1c9fb4cbe94b76d9fd2a7b24ad96e830.jpg "BQ Aquaris X5 Plus")
