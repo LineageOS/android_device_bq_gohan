@@ -141,6 +141,9 @@ mmp.enable.3g2=true
 ro.vendor.extension_library=libqti-perfd-client.so
 
 
+# Storage
+ro.sdcardfs.enable=true
+
 # Telephony
 persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
