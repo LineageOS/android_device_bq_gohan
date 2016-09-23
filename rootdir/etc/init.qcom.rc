@@ -827,3 +827,6 @@ service audiod /system/bin/audiod
    class late_start
    user system
    group system
+
+on property:vold.decrypt=trigger_restart_min_framework
+    start time_daemon
