@@ -61,6 +61,7 @@ voice.voip.conc.disabled=true
 
 
 # Bluetooth
+qcom.bluetooth.soc=smd
 bluetooth.hfp.client=1
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
