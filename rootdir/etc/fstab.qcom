@@ -13,6 +13,7 @@
 
 /dev/block/bootdevice/by-name/boot                  /boot        emmc    defaults                                                                       recoveryonly
 /dev/block/bootdevice/by-name/recovery              /recovery    emmc    defaults                                                                       recoveryonly
+/dev/block/bootdevice/by-name/misc                  /misc        emmc    defaults                                                                       recoveryonly
 
 # SDCard
 /devices/soc.0/7864900.sdhci/mmc_host*              auto         auto    defaults                                                                       voldmanaged=sdcard1:auto,encryptable=userdata
