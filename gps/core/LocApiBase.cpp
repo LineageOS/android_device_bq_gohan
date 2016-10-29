@@ -1,4 +1,4 @@
-/* Copyright (c) 2011-2014, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2011-2016, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -258,11 +258,12 @@ void LocApiBase::reportSv(GnssSvStatus &svStatus,
                   void* svExt)
 {
     // print the SV info before delivering
-    LOC_LOGV("num sv: %d\n  ephemeris mask: %dxn  almanac mask: %x\n  gps/glo/bds in use"
-             " mask: %x/%x/%x\n      sv: prn         snr       elevation      azimuth",
+    LOC_LOGV("num sv: %d\n  ephemeris mask: %dxn  almanac mask: %x\n  gps/glo/bds/gal in use"
+             " mask: %x/%x/%x/%x\n      sv: prn         snr       elevation      azimuth",
              svStatus.num_svs, svStatus.ephemeris_mask,
              svStatus.almanac_mask, svStatus.gps_used_in_fix_mask,
-             svStatus.glo_used_in_fix_mask, svStatus.bds_used_in_fix_mask);
+             svStatus.glo_used_in_fix_mask, svStatus.bds_used_in_fix_mask,
+             svStatus.gal_used_in_fix_mask);
     for (int i = 0; i < svStatus.num_svs && i < GPS_MAX_SVS; i++) {
         LOC_LOGV("   %d:   %d    %f    %f    %f",
                  i,
@@ -443,6 +444,10 @@ DEFAULT_IMPL(LOC_API_ADAPTER_ERR_SUCCESS)
 
 enum loc_api_adapter_err LocApiBase::
     setSUPLVersion(uint32_t version)
+DEFAULT_IMPL(LOC_API_ADAPTER_ERR_SUCCESS)
+
+enum loc_api_adapter_err LocApiBase::
+    setNMEATypes (uint32_t typesMask)
 DEFAULT_IMPL(LOC_API_ADAPTER_ERR_SUCCESS)
 
 enum loc_api_adapter_err LocApiBase::
