@@ -146,6 +146,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Malloc
 MALLOC_IMPL := dlmalloc
 
+# NFC
+BOARD_NFC_CHIPSET := pn547
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
