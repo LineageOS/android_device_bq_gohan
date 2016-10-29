@@ -24,19 +24,23 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, device/bq/gohan/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-BOARD_VENDOR := BQ
-PRODUCT_BRAND := BQ
+BOARD_VENDOR := bq
+PRODUCT_BRAND := bq
 PRODUCT_DEVICE := gohan
 PRODUCT_NAME := cm_gohan
-PRODUCT_MANUFACTURER := BQ
+PRODUCT_MANUFACTURER := bq
 PRODUCT_MODEL := Aquaris X5 Plus
-TARGET_VENDOR := BQ
+TARGET_VENDOR := bq
+
+# Set product device & name
+PRODUCT_BUILD_PROP_OVERRIDES += \
+   TARGET_DEVICE=Aquaris_X5_Plus PRODUCT_NAME=Aquaris_X5_Plus
 
 PRODUCT_GMS_CLIENTID_BASE := android-bq
 
 # Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=bq/Aquaris_X5_Plus/Aquaris_X5_Plus:6.0.1/MMB29M/1469675548:user/release-keys \
-    PRIVATE_BUILD_DESC="gohan-user 6.0.1 MMB29M 1.2.0_20160728-0512 release-keys"
+    BUILD_FINGERPRINT=bq/Aquaris_X5_Plus/Aquaris_X5_Plus:6.0.1/MMB29M/1472045538:user/release-keys \
+    PRIVATE_BUILD_DESC="gohan-user 6.0.1 MMB29M 1.3.0_20160824-1532 release-keys"
 endif

@@ -47,7 +47,7 @@ TARGET_KERNEL_CONFIG := gohan_defconfig
 TARGET_KERNEL_SOURCE := kernel/bq/msm8976
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gohan
+TARGET_OTA_ASSERT_DEVICE := Aquaris_X5_Plus,gohan
 
 # Audio
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
