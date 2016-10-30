@@ -78,6 +78,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc.0/7af6000.i2c/i2c-6/6-0020/input/input0/wake_gesture"
 
 # CNE
 BOARD_USES_QCNE := true
