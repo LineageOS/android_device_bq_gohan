@@ -149,6 +149,7 @@ MALLOC_IMPL := dlmalloc
 
 # NFC
 BOARD_NFC_CHIPSET := pn547
+BOARD_NFC_DEVICE := "/dev/pn547"
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
