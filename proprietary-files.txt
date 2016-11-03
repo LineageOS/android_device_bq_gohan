@@ -486,7 +486,8 @@ vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
 # Touchscreen
-etc/firmware/synaptics_firmware_truly.img
+etc/firmware/synaptics_firmware_truly_auo.img
+etc/firmware/synaptics_firmware_truly_lg.img
 
 # WLAN
 bin/wcnss_service
