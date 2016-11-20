@@ -226,6 +226,8 @@ on boot
     chown radio radio /data/misc/radio/copy_complete
     chmod 0660 /data/misc/radio/copy_complete
 
+    write /sys/module/rmnet_usb/parameters/rmnet_data_init 1
+    chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
 
     chmod 666 /dev/pn547
     chown system system /dev/pn547

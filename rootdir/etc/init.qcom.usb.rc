@@ -45,6 +45,11 @@ on fs
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
     write /sys/class/android_usb/android0/f_ffs/aliases adb
 
+on post-fs-data
+    write /sys/class/android_usb/android0/f_rndis_qc/rndis_transports BAM2BAM_IPA
+    # Increase RNDIS DL max aggregation size to 11K
+    write /sys/module/g_android/parameters/rndis_dl_max_xfer_size 11264
+
 # Following are the parameters required for usb functionality. They provide configurable options like
 # product_id/vendor id and allows specifying required functions:
 #
