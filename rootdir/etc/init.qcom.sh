@@ -91,7 +91,6 @@ if [ -f /sys/class/graphics/fb0/modes ]; then
 	fi
 fi
 
-setprop qemu.hw.mainkeys 0
 bootmode=`getprop ro.bootmode`
 emmc_boot=`getprop ro.boot.emmc`
 case "$emmc_boot"
