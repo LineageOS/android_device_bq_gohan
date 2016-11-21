@@ -96,7 +96,6 @@ PRODUCT_PACKAGES += \
 
 # Snapdragon Camera
 PRODUCT_PACKAGES += \
-    libbson \
     Snap
 
 # Display
