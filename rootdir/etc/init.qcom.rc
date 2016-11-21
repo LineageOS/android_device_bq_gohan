@@ -631,7 +631,7 @@ service cnss-daemon /system/bin/cnss-daemon -n -l
 service loc_launcher /system/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
-    group gps inet net_raw qcom_diag net_admin wifi
+    group gps inet qcom_diag wifi
 
 on property:crypto.driver.load=1
     insmod /system/lib/modules/qce.ko
@@ -724,7 +724,7 @@ service adsprpcd /system/bin/adsprpcd
 service per_mgr /system/bin/pm-service
     class core
     user system
-    group system net_raw
+    group system
 
 service per_proxy /system/bin/pm-proxy
     class core
