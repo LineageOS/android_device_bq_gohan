@@ -789,15 +789,15 @@ service msm_irqbal_lb /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqba
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-# service gx_fpd /system/bin/gx_fpd
-#    class late_start
-#    user system
-#    group system
+service gx_fpd /system/bin/gx_fpd
+    class late_start
+    user system
+    group system
 
-# service fingerprintd /system/bin/fingerprintd
-#    class late_start
-#    socket fpce stream 0666 system system
-#    user system
+service fingerprintd /system/bin/fingerprintd
+    class late_start
+    socket fpce stream 0666 system system
+    user system
 
 #start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
