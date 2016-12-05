@@ -281,6 +281,14 @@ vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
+# Fingerprint sensor
+bin/gx_fpd
+lib/hw/fingerprint.default.so
+lib/hw/gxfingerprint.default.so
+lib/libfp_client.so
+lib/libfpnav.so
+lib/libfpservice.so
+
 # Firmware
 etc/firmware/DE.o.msm8952
 etc/firmware/DE.o.msm8976

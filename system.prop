@@ -100,6 +100,9 @@ persist.hwc.mdpcomp.enable=true
 ro.opengles.version=196609
 
 
+# Fingerprint
+persist.qfp=false
+
 
 # Factory Reset Protection
 ro.frp.pst=/dev/block/bootdevice/by-name/config
