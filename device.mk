@@ -211,7 +211,6 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.qcom.rc \
-    loggy.sh \
     ueventd.qcom.rc
 
 # Sensors
