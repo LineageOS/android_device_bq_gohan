@@ -397,6 +397,9 @@ etc/firmware/venus-v1.b04
 etc/firmware/venus-v1.mbn
 etc/firmware/venus-v1.mdt
 
+# Misc
+bin/adjust_serialno
+
 # NFC
 vendor/firmware/libpn547_fw.so
 
