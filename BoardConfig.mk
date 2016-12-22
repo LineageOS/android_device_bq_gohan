@@ -74,6 +74,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # CMHW
 BOARD_HARDWARE_CLASS := device/bq/gohan/cmhw/src
