@@ -76,8 +76,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
+BOARD_HARDWARE_CLASS := device/bq/gohan/cmhw/src
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc.0/7af6000.i2c/i2c-6/6-0020/input/input0/wake_gesture"
 
 # CNE
