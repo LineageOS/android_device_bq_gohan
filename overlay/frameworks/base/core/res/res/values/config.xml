@@ -422,24 +422,6 @@
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- Flag indicating whether strict threshold is used, or lenient threshold is used,
-          when evaluating RSRP for LTE antenna bar display
-           0. Strict threshold
-           1. Lenient threshold
-           2. Custom threshold
-    -->
-    <integer name="config_LTE_RSRP_threshold_type">2</integer>
-
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
-
-    <!-- When config_LTE_RSRP_threshold_type is set to "custom" -->
-    <integer-array name="config_LTE_RSRP_custom_levels">
-        <item>-140</item>
-        <item>-120</item>
-        <item>-115</item>
-        <item>-110</item>
-        <item>-100</item>
-        <item>-44</item>
-    </integer-array>
 </resources>
