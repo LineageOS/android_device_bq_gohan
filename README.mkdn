@@ -19,6 +19,6 @@ Display | 1920x1080 pixels, 5.0 inches (~442 ppi pixel density)
 Camera  | Primary: 16 MP, f/2.0, phase detection autofocus, dual-LED (dual tone) flash
 	| Secondary: 8 MP, f/2.0, 1080p
 
-Copyright 2016 - The CyanogenMod Project.
+Copyright (C) 2017 The LineageOS Project.
 
 ![Aquaris X5 Plus](https://it-bqcom15-media.s3.amazonaws.com/prod/images/200_200/6/7/a/d/67ad2f4be52cca13f3830f6793d466bbdf2fa3a5.jpg "BQ Aquaris X5 Plus")

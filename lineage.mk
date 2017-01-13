@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit from gohan device
@@ -27,7 +27,7 @@ $(call inherit-product, device/bq/gohan/device.mk)
 BOARD_VENDOR := bq
 PRODUCT_BRAND := bq
 PRODUCT_DEVICE := gohan
-PRODUCT_NAME := cm_gohan
+PRODUCT_NAME := lineage_gohan
 PRODUCT_MANUFACTURER := bq
 PRODUCT_MODEL := Aquaris X5 Plus
 TARGET_VENDOR := bq
