@@ -126,14 +126,11 @@ public:
 	/*Query the IPA endpoint property */
 	int query_iface_property(void);
 
-	/*implement IPACM strlcpy */
-	size_t strlcpy(char *dest, const char *src, size_t size);
-
-	/*implement IPACM strlcat */
-	size_t strlcat(char *dest, const char *src, size_t n);
-
 	/*Configure the initial filter rules */
 	virtual int init_fl_rule(ipa_ip_type iptype);
+
+	/* Change IP Type.*/
+	void config_ip_type(ipa_ip_type iptype);
 
 	/* Get interface index */
 	virtual int ipa_get_if_index(char * if_name, int * if_index);
