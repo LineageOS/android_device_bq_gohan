@@ -12,13 +12,6 @@ etc/acdbdata/QRD/QRD_Handset_cal.acdb
 etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Bluetooth_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_General_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Global_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Handset_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Hdmi_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Headset_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Speaker_cal.acdb
 
 # Audio libraries
 etc/drc/drc_cfg_5.1.txt
@@ -26,8 +19,6 @@ etc/drc/drc_cfg_AZ.txt
 etc/firmware/tfa98xx.cnt
 etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
 etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
-vendor/etc/nxp/AcControlParams_SPEAKER.txt
-vendor/etc/nxp/LVACFS_Configuration.txt
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -40,7 +31,6 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libhwdaphal.so
-vendor/lib/libLifevibes_lvac.so
 vendor/lib/libsurround_3mic_proc.so
 
 # Bluetooth
@@ -51,13 +41,17 @@ vendor/lib/libbtnv.so
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8952.so
+lib/libarcsoft_beautyshot.so
+lib/libcam.beautyshot.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmm-qcamera.so
+lib/libmpbase.so
 lib/libqomx_core.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
+vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libllvd_sw_tnr.so
@@ -73,19 +67,18 @@ vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_debug.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/libmmcamera2_vpe_module.so
-vendor/lib/libmmcamera2_wnr_module.so
 vendor/lib/libmmcamera_cac3_lib.so
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dcrf_lib.so
+vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imx219_d8n03d.so
@@ -138,14 +131,14 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_ubifocus_lib.so
-vendor/lib/libmmcamera_vpu_module.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libjpegdmahw.so
+vendor/lib/libmmosal.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
+vendor/lib/libseemore.so
 vendor/lib/libSonyIMX298PdafLibrary.so
 vendor/lib/libts_detected_face_hal.so
 vendor/lib/libts_face_beautify_hal.so
@@ -171,7 +164,6 @@ vendor/lib/libchromatix_imx219_d8n03d_cpp_snapshot.so
 vendor/lib/libchromatix_imx219_d8n03d_cpp_us_chromatix.so
 vendor/lib/libchromatix_imx219_d8n03d_cpp_video_full.so
 vendor/lib/libchromatix_imx219_d8n03d_cpp_video.so
-vendor/lib/libchromatix_imx219_d8n03d_default_video.so
 vendor/lib/libchromatix_imx219_d8n03d_hfr_120.so
 vendor/lib/libchromatix_imx219_d8n03d_hfr_60.so
 vendor/lib/libchromatix_imx219_d8n03d_hfr_90.so
@@ -182,8 +174,8 @@ vendor/lib/libchromatix_imx219_d8n03d_snapshot.so
 vendor/lib/libchromatix_imx219_d8n03d_video_full.so
 vendor/lib/libchromatix_imx219_d8n03d_zsl_preview.so
 vendor/lib/libchromatix_imx219_d8n03d_zsl_video.so
-vendor/lib/libchromatix_imx298_16M_preview.so
-vendor/lib/libchromatix_imx298_16M_video.so
+vendor/lib/libchromatix_imx298_4K_preview.so
+vendor/lib/libchromatix_imx298_4K_video.so
 vendor/lib/libchromatix_imx298_common.so
 vendor/lib/libchromatix_imx298_cpp_hfr_120.so
 vendor/lib/libchromatix_imx298_cpp_hfr_60.so
@@ -238,10 +230,8 @@ framework/ConnectivityExt.jar
 framework/cneapiclient.jar
 framework/com.quicinc.cne.jar
 -priv-app/CNEService/CNEService.apk
-vendor/lib/libNimsWrap.so
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
-vendor/lib/libcneconn.so
 vendor/lib/libcneqmiutils.so
 vendor/lib/libvendorconn.so
 vendor/lib/libwms.so
@@ -264,9 +254,7 @@ vendor/lib/libdpmtcm.so
 
 # DRM
 bin/qseecomd
-vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libdrmdecrypt.so
 vendor/lib/lib-sec-disp.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -277,7 +265,6 @@ vendor/lib/libsecureui_svcsock.so
 vendor/lib/libSecureUILib.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
-vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
@@ -314,7 +301,6 @@ etc/permissions/com.qualcomm.location.xml
 framework/com.qti.location.sdk.jar
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/bin/slim_daemon
-vendor/lib/libloc_xtra.so
 vendor/lib/liblowi_wifihal.so
 lib/libloc_api_v02.so
 lib/libloc_ds_api.so
@@ -464,9 +450,12 @@ etc/permissions/qcrilhook.xml
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
+vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qc-radioconfig.so
 vendor/lib/libril-qcril-hook-oem.so
+vendor/lib/librilqmiservices.so
+vendor/lib/libsettings.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 vendor/qcril.db
