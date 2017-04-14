@@ -1,0 +1,9 @@
+type gx_fpd, domain;
+type gx_fpd_exec, exec_type, file_type;
+
+init_daemon_domain(gx_fpd)
+
+allow gx_fpd ion_device:chr_file rw_file_perms;
+allow gx_fpd self:capability dac_override;
+allow gx_fpd tee_device:chr_file rw_file_perms;
+

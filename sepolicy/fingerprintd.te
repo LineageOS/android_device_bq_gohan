@@ -1,2 +1,2 @@
-allow fingerprintd gx_fpd_data_file:dir create_dir_perms;
+allow fingerprintd gx_fpd_file:dir create_dir_perms;
 

@@ -702,10 +702,10 @@ service gx_fpd /system/bin/gx_fpd
     class late_start
     user system
     group system
+    seclabel u:r:gx_fpd:s0
 
 service fingerprintd /system/bin/fingerprintd
     class late_start
-    socket fpce stream 0666 system system
     user system
 
 #start camera server as daemon
