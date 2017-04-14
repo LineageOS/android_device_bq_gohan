@@ -2,26 +2,34 @@
 #Optimal dex2oat threads for faster app installation
 ro.sys.fw.dex2oat_thread_count=4
 
-
 # Audio
-audio.dolby.ds2.enabled=true
+#Audio voice concurrency related flags
+voice.playback.conc.disabled=true
+voice.record.conc.disabled=false
+voice.voip.conc.disabled=false
+#Decides the audio fallback path during voice call, deep-buffer and fast are the two allowed fallback paths now.
+voice.conc.fallbackpath=deep-buffer
 
-#Enable music through deep buffer
-audio.deep_buffer.media=true
+#parser input buffer size(256kb) in byte stream mode
+audio.parser.ip.buffer.size=262144
 
+#
+#snapdragon value add features
+#
+ro.qc.sdk.audio.ssr=false
+##fluencetype can be "fluence" or "fluencepro" or "none"
+ro.qc.sdk.audio.fluencetype=fluence
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=false
+#Set for msm8952
+tunnel.audio.encode = false
 #Buffer size in kbytes for compress offload playback
 audio.offload.buffer.size.kb=64
-
-audio.offload.disable=1
-
-#enable dsp gapless mode by default
-audio.offload.gapless.enabled=true
-
-#multi offload
-audio.offload.multiple.enabled=false
-
 #Minimum duration for offload playback in secs
 audio.offload.min.duration.secs=30
+#Enable offload audio video playback by default
+audio.offload.video=true
 
 #Enable PCM offload by default
 audio.offload.pcm.16bit.enable=true
@@ -30,35 +38,31 @@ audio.offload.pcm.24bit.enable=true
 #Enable audio track offload by default
 audio.offload.track.enable=false
 
-#Enable offload audio video playback by default
-audio.offload.video=true
-
-#enable downsampling for multi-channel content > 48Khz
-audio.playback.mch.downsample=true
-
-#enable pbe effects
-audio.safx.pbe.enabled=true
-
-persist.audio.dirac.speaker=true
-persist.audio.fluence.audiorec=false
-persist.audio.fluence.spk.mono=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=true
-persist.audio.fluence.speaker=true
-persist.sys.button_jack_profile=volume
-persist.sys.button_jack_switch=0
-ro.qc.sdk.audio.fluencetype=none
-ro.qc.sdk.audio.ssr=false
-tunnel.audio.encode=false
+#Enable music through deep buffer
+audio.deep_buffer.media=true
 
 #enable voice path for PCM VoIP by default
 use.voice.path.for.pcm.voip=true
 
-voice.conc.fallbackpath=deep-buffer
-voice.playback.conc.disabled=true
-voice.record.conc.disabled=false
-voice.voip.conc.disabled=true
+#enable downsampling for multi-channel content > 48Khz
+audio.playback.mch.downsample=true
 
+#
+#System property for FM transmitter
+#
+ro.fm.transmitter=false
+#enable dsp gapless mode by default
+audio.offload.gapless.enabled=true
+
+#multi offload
+audio.offload.multiple.enabled=false
+
+#enable pbe effects
+audio.safx.pbe.enabled=true
+#property for AudioSphere Post processing
+audio.pp.asphere.enabled=false
+
+audio.dolby.ds2.enabled=true
 
 # Bluetooth
 qcom.bluetooth.soc=smd
@@ -77,22 +81,33 @@ ro.qualcomm.bluetooth.pbap=true
 
 # Camera
 persist.camera.HAL3.enabled=1
+camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 
+#properties for limiting preview size in camera
+camera.display.umax=1920x1080
+camera.display.lmax=1280x720
+
+#In video expect camera time source as monotonic
+media.camera.ts.monotonic=1
+
+#low power mode for camera
+camera.lowpower.record.enable=1
 
 # CNE/DPM
 persist.cne.feature=1
-persist.dpm.feature=5
-persist.dpm.nsrm.bkg.evt=3955
-
+persist.dpm.feature=7
+persist.sys.dpmd.nsrm=3
 
 # Display
-debug.egl.hw=1
-debug.enable.sglscale=1
-debug.mdpcomp.logs=0
 debug.sf.hw=1
+debug.egl.hw=1
+persist.hwc.mdpcomp.enable=true
+debug.mdpcomp.logs=0
+dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
-persist.hwc.mdpcomp.enable=true
+debug.enable.sglscale=1
+ro.sf.lcd_density=480
 
 #
 # system prop for opengles version
@@ -106,56 +121,42 @@ ro.opengles.version=196610
 # Fingerprint
 persist.qfp=false
 
-
 # Factory Reset Protection
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
-
 # HWUI properties
-ro.hwui.drop_shadow_cache_size=6
-ro.hwui.gradient_cache_size=1
+ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48
-ro.hwui.path_cache_size=32
 ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
 ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=2048
-ro.hwui.texture_cache_size=72
-
-
-# GPS
-persist.gps.qc_nlp_in_use=1
-persist.loc.nlp_name=com.qualcomm.location
-ro.gps.agps_provider=1
-ro.sf.lcd_density=480
-
 
 # Media
-media.aac_51_output_enabled=true
-media.msm8956.version=1
-media.msm8956hw=1
+qcom.hw.aac.encoder=true
 mm.enable.smoothstreaming=true
+av.debug.disable.pers.cache=true
 mmp.enable.3g2=true
-
+media.aac_51_output_enabled=true
+vidc.enc.dcvs.extra-buff-count=2
+vidc.enc.narrow.searchrange=1
 
 # Perf
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
 ro.vendor.extension_library=libqti-perfd-client.so
-
 
 # Storage
 ro.sdcardfs.enable=true
 
 # Telephony
-persist.data.netmgrd.qos.enable=true
-persist.data.mode=concurrent
-persist.radio.apm_sim_not_pwdn=1
-persist.radio.custom_ecc=1
-persist.radio.multisim.config=dsds
-persist.radio.NO_STAPA=1
-persist.radio.rat_on=combine
-persist.radio.sib16_support=1
+rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
 persist.rild.nitz_long_ons_1=
@@ -165,18 +166,25 @@ persist.rild.nitz_short_ons_0=
 persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
-net.tcp.2g_init_rwnd=10
-rild.libargs=-d /dev/smd0
-rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-ro.telephony.call_ring.multiple=false
-ro.telephony.default_network=22,22
-ro.use_data_netmgrd=true
+ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
-
+ro.telephony.default_network=9,3
+persist.radio.rat_on=disable
+persist.radio.proc_nw_scan=1
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.sib16_support=1
+persist.radio.custom_ecc=1
+persist.radio.multisim.config=dsds
+persist.env.spec=Default
+persist.radio.mode_pref_nv10=0
+persist.omacp.enable=true
+persist.mmssupportcp.enable=true
+persist.env.fastdorm.enabled=false
+persist.fd.scroff.timer=1000
+persist.fd.scron.timer=5000
 
 # Time services
 persist.timed.enable=true
-
 
 # WiFi
 wifi.interface=wlan0
