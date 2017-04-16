@@ -275,6 +275,7 @@ lib/hw/gxfingerprint.default.so
 lib/libfp_client.so
 lib/libfpnav.so
 lib/libfpservice.so
+vendor/lib/libadsp_default_listener.so
 
 # Firmware
 etc/firmware/DE.o.msm8952
@@ -298,7 +299,10 @@ vendor/lib/hw/gatekeeper.msm8952.so
 bin/loc_launcher
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
+etc/permissions/izat.xt.srv.xml
+framework/com.android.location.provider.jar
 framework/com.qti.location.sdk.jar
+framework/izat.xt.srv.jar
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/bin/slim_daemon
 vendor/lib/liblowi_wifihal.so
