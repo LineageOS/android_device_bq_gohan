@@ -19,6 +19,7 @@ etc/drc/drc_cfg_AZ.txt
 etc/firmware/tfa98xx.cnt
 etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
 etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+lib/hw/audio.primary.msm8952.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
