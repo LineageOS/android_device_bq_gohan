@@ -41,6 +41,7 @@ vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
+etc/camera/camera_config.xml
 lib/hw/camera.msm8952.so
 lib/libarcsoft_beautyshot.so
 lib/libcam.beautyshot.so
@@ -123,12 +124,15 @@ vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_ppbase_module.so
+vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_semco_cat24c64_eeprom.so
+vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sunny_imx219_d8n03d_eeprom.so
 vendor/lib/libmmcamera_sw_tnr.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_ubifocus_lib.so
@@ -139,16 +143,22 @@ vendor/lib/libmmqjpegdma.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
+vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libSonyIMX298PdafLibrary.so
 vendor/lib/libts_detected_face_hal.so
 vendor/lib/libts_face_beautify_hal.so
+vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 
 # Camera actuator
 vendor/lib/libactuator_bu64297.so
 
 # Camera chromatix
+etc/camera/imx219_cmb104_chromatix.xml
+etc/camera/imx219_d8n03d_chromatix.xml
+etc/camera/imx298_chromatix.xml
+etc/camera/imx298_cmb087qr_chromatix.xml
 vendor/lib/libchromatix_imx219_d8n03d_a3_default_preview.so
 vendor/lib/libchromatix_imx219_d8n03d_a3_default_video.so
 vendor/lib/libchromatix_imx219_d8n03d_a3_hfr_120.so
@@ -213,6 +223,7 @@ etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_1.fw
 etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
 etc/firmware/cpp_firmware_v1_10_0.fw
