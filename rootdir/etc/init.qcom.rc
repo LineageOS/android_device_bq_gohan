@@ -519,7 +519,7 @@ service qcom-sh /system/bin/sh /init.qcom.sh
     user root
     oneshot
 
-service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
+service hciattach /system/bin/sh /init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin
