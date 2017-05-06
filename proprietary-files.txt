@@ -17,8 +17,8 @@ etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 etc/drc/drc_cfg_5.1.txt
 etc/drc/drc_cfg_AZ.txt
 etc/firmware/tfa98xx.cnt
-etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
-etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+#etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
+#etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -29,9 +29,9 @@ vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioparsers.so
-vendor/lib/libdrc.so
+#vendor/lib/libdrc.so
 vendor/lib/libhwdaphal.so
-vendor/lib/libsurround_3mic_proc.so
+#vendor/lib/libsurround_3mic_proc.so
 
 # Bluetooth
 bin/btnvtool
