@@ -87,15 +87,15 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/system/etc/usb_audio_policy_configuration.xml \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
-    hardware/qcom/audio-caf/msm8952/configs/msm8952_32/audio_platform_info.xml:system/etc/audio_platform_info.xml \
-    hardware/qcom/audio-caf/msm8952/configs/msm8952_32/audio_platform_info_extcodec.xml:system/etc/audio_platform_info_extcodec.xml \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/audio_policy.conf:system/etc/audio_policy.conf \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/sound_trigger_mixer_paths_wcd9306.xml:system/etc/sound_trigger_mixer_paths_wcd9306.xml \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
     hardware/qcom/audio-caf/msm8952/configs/msm8952_32/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_qrd_skun.xml:system/etc/mixer_paths_qrd_skun.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:system/etc/audio_platform_info_extcodec.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_qrd_skun.xml:system/etc/mixer_paths_qrd_skun.xml
 
 # Camera
 PRODUCT_PACKAGES += \
