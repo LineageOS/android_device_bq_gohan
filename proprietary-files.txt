@@ -28,10 +28,11 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
-vendor/lib/libaudioparsers.so
+-vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libhwdaphal.so
 vendor/lib/libsurround_3mic_proc.so
+-vendor/lib/libqct_resampler.so
 
 # Bluetooth
 bin/btnvtool
