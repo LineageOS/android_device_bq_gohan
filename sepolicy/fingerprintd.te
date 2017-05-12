@@ -1,2 +1,4 @@
-allow fingerprintd gx_fpd_file:dir create_dir_perms;
-
+allow fingerprintd gx_fpd_data_file:dir create_dir_perms;
+allow fingerprintd gx_fpd_service:service_manager find;
+allow fingerprintd fingerprint_service:service_manager find;
+set_prop(fingerprintd, system_prop)
