@@ -1,0 +1,4 @@
+allow init hci_attach_dev:chr_file { ioctl write };
+allow init qmuxd:unix_stream_socket connectto;
+allow init qmuxd_socket:sock_file write;
+allow init self:socket create_socket_perms;
