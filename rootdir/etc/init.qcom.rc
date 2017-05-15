@@ -520,7 +520,7 @@ service qcom-sh /system/bin/sh /init.qcom.sh
     oneshot
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
-    seclabel u:r:init:s0
+    seclabel u:r:bluetooth_loader:s0
     class late_start
     user bluetooth
     group bluetooth net_bt_admin
