@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a486d77_228e4d2f",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 17654
+      },
+      "writtenOn": "2017-05-15T16:20:12Z",
+      "side": 1,
+      "message": ".xml.xml -\u003e you mean .xml ;)",
+      "range": {
+        "startLine": 99,
+        "startChar": 52,
+        "endLine": 99,
+        "endChar": 60
+      },
+      "revId": "740278a3a35bfd5ba2dbaf94046aa2c972b0de5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
