@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a486d77_0e225301",
+        "filename": "cmhw/src/org/cyanogenmod/hardware/VibratorHW.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 5404
+      },
+      "writtenOn": "2017-05-18T15:58:48Z",
+      "side": 1,
+      "message": "Doesn\u0027t make much sense unless our kernel exposes this file again",
+      "revId": "a11af6987c3ef9c580f9576bec887683008d658b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
