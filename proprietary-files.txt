@@ -82,6 +82,7 @@ vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imx219_d8n03d.so
 vendor/lib/libmmcamera_imx298.so
+vendor/lib/libmmcamera_imx298_cmb087qr.so
 vendor/lib/libmmcamera_isp_abcc44.so
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
@@ -130,6 +131,7 @@ vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
+vendor/lib/libmmcamera_truly_imx298_cmb087qr_eeprom.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_ubifocus_lib.so
@@ -150,10 +152,12 @@ vendor/lib/libubifocus.so
 
 # Camera actuator
 vendor/lib/libactuator_bu64297.so
+vendor/lib/libactuator_dw9800w_cmb087qr.so
 
 # Camera chromatix
 etc/camera/imx219_d8n03d_chromatix.xml
 etc/camera/imx298_chromatix.xml
+etc/camera/imx298_cmb087qr_chromatix.xml
 vendor/lib/libchromatix_imx219_d8n03d_a3_default_preview.so
 vendor/lib/libchromatix_imx219_d8n03d_a3_default_video.so
 vendor/lib/libchromatix_imx219_d8n03d_a3_hfr_120.so
@@ -211,6 +215,37 @@ vendor/lib/libchromatix_imx298_video_hdr.so
 vendor/lib/libchromatix_imx298_video.so
 vendor/lib/libchromatix_imx298_zsl_preview.so
 vendor/lib/libchromatix_imx298_zsl_video.so
+vendor/lib/libchromatix_imx298_cmb087qr_4K_preview.so
+vendor/lib/libchromatix_imx298_cmb087qr_4K_video.so
+vendor/lib/libchromatix_imx298_cmb087qr_common.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_120.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_60.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_90.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_liveshot.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_preview.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_snapshot.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_snapshot_hdr.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_video.so
+vendor/lib/libchromatix_imx298_cmb087qr_cpp_video_hdr.so
+vendor/lib/libchromatix_imx298_cmb087qr_default_preview.so
+vendor/lib/libchromatix_imx298_cmb087qr_default_video.so
+vendor/lib/libchromatix_imx298_cmb087qr_hdr_snapshot.so
+vendor/lib/libchromatix_imx298_cmb087qr_hdr_video.so
+vendor/lib/libchromatix_imx298_cmb087qr_hfr_120.so
+vendor/lib/libchromatix_imx298_cmb087qr_hfr_120_3a.so
+vendor/lib/libchromatix_imx298_cmb087qr_hfr_60.so
+vendor/lib/libchromatix_imx298_cmb087qr_hfr_60_3a.so
+vendor/lib/libchromatix_imx298_cmb087qr_hfr_90.so
+vendor/lib/libchromatix_imx298_cmb087qr_hfr_90_3a.so
+vendor/lib/libchromatix_imx298_cmb087qr_liveshot.so
+vendor/lib/libchromatix_imx298_cmb087qr_postproc.so
+vendor/lib/libchromatix_imx298_cmb087qr_preview.so
+vendor/lib/libchromatix_imx298_cmb087qr_snapshot.so
+vendor/lib/libchromatix_imx298_cmb087qr_snapshot_hdr.so
+vendor/lib/libchromatix_imx298_cmb087qr_video.so
+vendor/lib/libchromatix_imx298_cmb087qr_video_hdr.so
+vendor/lib/libchromatix_imx298_cmb087qr_zsl_preview.so
+vendor/lib/libchromatix_imx298_cmb087qr_zsl_video.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
